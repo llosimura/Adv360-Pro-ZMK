@@ -21,13 +21,13 @@
 MAKE_HRM(hml, &kp, &kp, KEYS_R THUMBS)  // left-hand HRMs
 MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand HRMs
 
-// Diferent havior for the shift keys
+// Different behavior for the shift keys
 ZMK_BEHAVIOR(hms, hold_tap, \
         flavor = "hold-preferred"; \
         tapping-term-ms = <145>; \
         quick-tap-ms = <QUICK_TAP_MS>; \
         global-quick-tap; \
-        bindings = &kp, &kp; \
+        bindings = <&kp>, <&kp>; \
     )
 
 #define BAS 0
